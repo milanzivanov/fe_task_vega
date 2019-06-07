@@ -509,7 +509,9 @@ header.header {
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .offers-box_gallery {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .offers-box_gallery .box_gallery {
+      margin-right: 0; } }
 
 .classes-box {
   background-color: #021f59;

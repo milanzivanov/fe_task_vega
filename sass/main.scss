@@ -441,6 +441,10 @@ header.header {
 @include breakpoint (mobile) {
   .offers-box_gallery {
     flex-direction: column;
+
+    .box_gallery {
+      margin-right: 0;
+    }
   }
 }
 
