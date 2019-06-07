@@ -688,11 +688,39 @@ header.header {
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .footer-top {
-    flex-direction: column; }
+    flex-flow: column wrap;
+    padding: 0; }
+    .footer-top .footer-top_left {
+      flex-direction: column;
+      flex: 100%;
+      padding: 25px 0;
+      width: 100%; }
+      .footer-top .footer-top_left .input-box {
+        border-bottom: none;
+        flex-direction: column;
+        width: 100%; }
+        .footer-top .footer-top_left .input-box input[type="email"] {
+          width: 80%;
+          border-bottom: 2px solid #fff; }
+        .footer-top .footer-top_left .input-box a {
+          padding: 10px 50px;
+          color: #002f9d;
+          margin: 10px 0 0 0;
+          font-weight: 700;
+          background-color: #fff; }
     .footer-top .footer-top_right {
-      background-color: #38bdff; }
+      background: #fff;
+      flex: 100%;
+      color: #002f9d;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .footer-top .footer-top_right h2 {
+        padding: 15px 0 0 0; }
       .footer-top .footer-top_right ul li a {
-        height: 60px;
-        width: 60px; }
+        height: 70px;
+        width: 70px; }
   .footer-bottom_content {
     flex-direction: column; } }
