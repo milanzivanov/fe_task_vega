@@ -67,18 +67,17 @@ body, html {
     align-items: center;
 
     .slider-hero_box {
-      // padding: 15px;
       padding-left: 165px;
       color: #fff;
+      margin-top: -25px;
 
       h1 {
         font-size: 50px;
-        // padding-bottom: 25px;
       }
 
       p {
         font-size: 24px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
         sup {
           font-size: 11px;
         }
@@ -162,7 +161,8 @@ body, html {
 //
 .usp-box {
   background-color: #fff;
-  padding: 52px 0;
+  padding: 60px 0 32px 0;
+  background-color: #32aeef;
 }
 
 .usp-box_top {
@@ -174,14 +174,14 @@ body, html {
   h3 {
     font-size: 16px;
     color: #bdbdbd;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     text-transform: uppercase;
   }
   
   h1 {
     font-size: 50px;
     color: #002f9d;
-    padding-bottom: 20px;
+    padding-bottom: 47px;
   }
 }
 
@@ -231,11 +231,30 @@ body, html {
       position: absolute;
       top: 0;
     }
-
   }
 
-  .box-text {
-    padding-left: 57px;
+  .box-svg_right {
+    // margin-left: -35px;
+    // margin-bottom: 30px;
+    margin: 0 0 30px -35px;
+  }
+
+ .box-svg_left {
+    // margin-left: 15px;
+    // margin-bottom: 30px;
+    margin: 0 0 30px 15px;
+  }
+
+  .box-text_left {
+    padding-left: 45px;
+  }
+  
+  .box-text_right {
+    padding-left: 35px;
+  }
+
+  .box-text_left,
+  .box-text_right {
 
     h4 {
       color: #000;

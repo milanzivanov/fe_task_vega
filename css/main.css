@@ -342,12 +342,13 @@ body, html {
     align-items: center; }
     .slider-hero .wrapper.slider-wrapper .slider-hero_box {
       padding-left: 165px;
-      color: #fff; }
+      color: #fff;
+      margin-top: -25px; }
       .slider-hero .wrapper.slider-wrapper .slider-hero_box h1 {
         font-size: 50px; }
       .slider-hero .wrapper.slider-wrapper .slider-hero_box p {
         font-size: 24px;
-        padding-bottom: 25px; }
+        padding-bottom: 10px; }
         .slider-hero .wrapper.slider-wrapper .slider-hero_box p sup {
           font-size: 11px; }
       .slider-hero .wrapper.slider-wrapper .slider-hero_box button {
@@ -393,7 +394,8 @@ body, html {
 
 .usp-box {
   background-color: #fff;
-  padding: 52px 0; }
+  padding: 60px 0 32px 0;
+  background-color: #32aeef; }
 
 .usp-box_top {
   display: flex;
@@ -403,12 +405,12 @@ body, html {
   .usp-box_top h3 {
     font-size: 16px;
     color: #bdbdbd;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     text-transform: uppercase; }
   .usp-box_top h1 {
     font-size: 50px;
     color: #002f9d;
-    padding-bottom: 20px; }
+    padding-bottom: 47px; }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .usp-box_top h1 {
@@ -445,15 +447,23 @@ body, html {
     .box .box-svg .bg-ellipse {
       position: absolute;
       top: 0; }
-  .box .box-text {
-    padding-left: 57px; }
-    .box .box-text h4 {
-      color: #000;
-      font-size: 24px;
-      padding-bottom: 20px; }
-    .box .box-text p {
-      color: #222;
-      font-size: 18px; }
+  .box .box-svg_right {
+    margin: 0 0 30px -35px; }
+  .box .box-svg_left {
+    margin: 0 0 30px 15px; }
+  .box .box-text_left {
+    padding-left: 45px; }
+  .box .box-text_right {
+    padding-left: 35px; }
+  .box .box-text_left h4,
+  .box .box-text_right h4 {
+    color: #000;
+    font-size: 24px;
+    padding-bottom: 20px; }
+  .box .box-text_left p,
+  .box .box-text_right p {
+    color: #222;
+    font-size: 18px; }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .usp-flex_wrapper {
