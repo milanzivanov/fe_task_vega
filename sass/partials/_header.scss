@@ -1,2 +1,120 @@
 /* ----------------- header
 ----------------------------------------------------------------------- */
+
+
+//
+header.header {
+    background-color: #fff;
+    padding: 0 0 15px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+  
+.header_left {
+    display: flex;
+    align-items: center;
+    // padding: 5px 10px 15px 58px;
+    padding-left: 60px;
+    a {
+        display: block;
+        padding-top: 5px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+  
+.header_right {
+    align-items: center;
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    flex: auto;
+
+    .nav {
+        padding: 15px 0 0 18px;
+
+        ul {
+            display: flex;
+
+            li {
+                a {
+                    display: block;
+                    padding: 5px 21px 20px 18px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    color: #32aeef;
+                }
+                &:last-child {
+                    padding-left: 6px;
+                }
+            }
+        
+        }
+    }
+
+    .nav-login {
+        display: flex;
+        align-items: center;
+        // padding: 0 56px 0 0;
+        padding-right: 66px;
+        li {
+            a.login {
+                display: flex;
+                align-items: center;
+                // padding: 0px 16px 15px 0px;
+                text-decoration: none;
+                color: #222;
+            }
+
+            .border {
+                margin: 0 15px 0 22px;
+                width: 2px;
+                display: flex;
+                height: 12px;
+                align-items: center;
+                background: #a8a2a2;
+            }
+
+            .nav-login_flag {
+                display: flex;
+                align-items: center;
+                margin: 0 -18px 0 0;
+                picture {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .nav-login_lang {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 0 0 10px;
+
+                    .login_dash {
+                        padding: 0 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+  
+// resposive header mobile
+@include breakpoint (mobile) {
+    .header_right {
+        justify-content: flex-end;
+        flex: none;
+        flex-direction: column-reverse;
+    }
+}
