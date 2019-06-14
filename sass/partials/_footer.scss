@@ -14,7 +14,7 @@ footer.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 0 24px 0;
+    padding: 37px 0 34px 0;
   
     .footer-top_left {
       display: flex;
@@ -25,7 +25,7 @@ footer.footer {
       p {
           color: #fff;
           font-size: 24px;
-          padding: 0px 115px 0 11px;
+          padding: 0px 105px 0 21px;
       }
     }
   
@@ -55,7 +55,7 @@ footer.footer {
           border-radius: 50%;
           text-align: center;
           line-height: 55px;
-          margin: 5px;
+          margin: 0 0 0 10px;
           border: 1px solid #bdbdbd;
   
           picture {
@@ -83,7 +83,7 @@ footer.footer {
     width: 40%;
   
     input[type="email"] {
-      padding: 10px 10px 5px 0;
+      padding: 10px 10px 12px 0;
       border: none;
       outline: none;
       background-color: #002f9d;
