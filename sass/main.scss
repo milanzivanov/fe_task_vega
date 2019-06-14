@@ -162,7 +162,6 @@ body, html {
 .usp-box {
   background-color: #fff;
   padding: 60px 0 32px 0;
-  background-color: #32aeef;
 }
 
 .usp-box_top {
@@ -375,7 +374,6 @@ body, html {
   padding: 50px 0 40px 0;
   display: flex;
   color: #002f9d;
-  background: #ffed28;
   
   h3 {
     font-size: 32px;
@@ -499,10 +497,8 @@ body, html {
     }
 
     .service-box {
-
       display: none;
       width: 100%;
-
       .service-box_content {
         background-color: #fff;
         display: flex;
@@ -515,35 +511,27 @@ body, html {
           align-items: flex-start;
           flex-direction: column;
           flex: 1;
-
           .circle-img {
             border-radius: 50%;
             height: 200px;
             width: 200px;
           }
-  
         }
 
         ul.service-box_img {
           align-items: center;
-
           a {
-  
             .circle-img {
               border-radius: 50%;
               height: 200px;
               width: 200px;
             }
-  
             img {
               height: auto;
               width: auto;
             }
-
           }
         }
-
-
       }
 
 
@@ -571,9 +559,6 @@ body, html {
         li {
 
           a {
-            // display: flex;
-            // justify-content: center;
-
             span,
             p {
               font-size: 16px;
@@ -600,11 +585,9 @@ body, html {
       display: flex;
     }
 
-
   }
 }
 
-// 
 // resposive mobile
 @include breakpoint (mobile) {
 
@@ -635,188 +618,6 @@ body, html {
 
 }
 
-// footer
-footer.footer {
-  border-bottom: 10px solid #32aeef;
-}
-
-.footer_flex {
-  background-color: #002f9d;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 37px 0;
-
-  .footer-top_left {
-    display: flex;
-    align-items: center;
-
-    p {
-      padding: 10px;
-      color: #fff;
-    }
-  }
-
-  //
-  .footer-top_right {
-    display: flex;
-    align-items: center;
-    color: #fff;
-
-    ul {
-      padding: 5px;
-      display: flex;
-      align-items: center;
-
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 55px;
-        margin: 5px;
-        border: 1px solid #bdbdbd;
-
-        picture {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-        }
-
-      }
-    }
-  }
-
-}
-
-.input-box {
-  background: #002f9d;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #fff;
-
-  input[type="email"] {
-    padding: 10px 10px 10px 0;
-    border: none;
-    outline: none;
-    background-color: #002f9d;
-  }
-
-  a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #fff;
-
-    span {
-      padding-right: 10px;
-    }
-  }
-
-}
-
-//
-
-.footer-bottom_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 0;
-  position: relative;
-
-  ul {
-    display: flex;
-    align-items: center;
-    a {
-      display: block;
-      padding: 10px 10px 10px 0;
-
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-
-  .footer-bottom_right {
-    display: flex;
-  }
-}
-
-// resposive mobile
-@include breakpoint (mobile) {
-  .footer-top {
-    flex-flow: column wrap;
-    padding: 0;
-
-    .footer-top_left {
-      flex-direction: column;
-      flex: 100%;
-      padding: 25px 0;
-      width: 100%;
-
-      .input-box {
-        border-bottom: none;
-        flex-direction: column;
-        width: 100%;
-
-        input[type="email"] {
-          width: 80%;
-          border-bottom: 2px solid #fff;
-        }
-
-        a {
-          padding: 10px 50px;
-          color: #002f9d;
-          margin: 10px 0 0 0;
-          font-weight: 700;
-          background-color: #fff;
-        }
-      }
-    }
-
-    .footer-top_right {
-      background: #fff;
-      flex: 100%;
-      color: #002f9d; 
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-      h2 {
-        padding: 15px 0 0 0;
-      }
-
-      ul {
-        li {
-          a {
-            height: 70px;
-            width: 70px;
-          }
-        }
-      }
-    }
-
-
-  }
-
-  .footer-bottom_content {
-    flex-direction: column;
-  }
-}
 
 
 
