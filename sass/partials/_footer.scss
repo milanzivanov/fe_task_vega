@@ -104,7 +104,6 @@ footer.footer {
   }
   
   //
-  
   .footer-bottom_content {
     display: flex;
     justify-content: space-between;
@@ -177,6 +176,7 @@ footer.footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding-right: 0;
         
         h2 {
           padding: 15px 0 0 0;

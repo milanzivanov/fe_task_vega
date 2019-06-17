@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
 
-
     setInterval(function(){
 
         var currentSlide = currentSlide = $('.slide.active');

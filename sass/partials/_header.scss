@@ -108,9 +108,32 @@ header.header {
   
 // resposive header mobile
 @include breakpoint (mobile) {
-    .header_right {
-        justify-content: flex-end;
-        flex: none;
-        flex-direction: column-reverse;
+
+    header.header {
+        padding: 10px 0 15px 0;
+
+        .header_left {
+            padding-left: 10px;
+        }
+
+        .header_right {
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex: none;
+            flex-direction: column-reverse;
+
+            .nav-login {
+                padding-right: 21px;
+                .nav-login_flag {
+                    margin: 0;
+
+                    .nav-login_mobile {
+                        display: none;
+                    }
+                }
+            }
+
+        }
     }
+
 }
