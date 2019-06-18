@@ -767,7 +767,8 @@ body, html {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .offers-box_gallery .box_gallery {
-    flex: calc(50% - 60px); }
+    flex: calc(50% - 60px);
+    margin: 0 25px 25px 25px; }
     .offers-box_gallery .box_gallery .box_gallery-img {
       height: 50vh;
       width: 100%; }
@@ -777,7 +778,9 @@ body, html {
       .offers-box_gallery .box_gallery .box_gallery-text p {
         padding-bottom: 30px; }
       .offers-box_gallery .box_gallery .box_gallery-text a {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+  .offers-box_gallery .box_gallery:nth-child(even) {
+    margin-left: 0; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .offers-box h4 {

@@ -422,10 +422,10 @@ body, html {
   .offers-box_gallery {
     .box_gallery {
       flex: calc(50% - 60px);
+      margin: 0 25px 25px 25px;
   
       .box_gallery-img {
         height: 50vh;
-        // height: 100%;
         width: 100%;
       }
 
@@ -441,6 +441,9 @@ body, html {
           padding-bottom: 20px;
         }
       }
+    }
+    .box_gallery:nth-child(even) {
+      margin-left: 0;
     }
   }
 }
