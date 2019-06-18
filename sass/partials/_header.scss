@@ -110,7 +110,7 @@ header.header {
 @include breakpoint (mobile) {
 
     header.header {
-        padding: 10px 0 15px 0;
+        padding: 15px 0 15px 0;
 
         .header_left {
             padding-left: 10px;
@@ -121,6 +121,12 @@ header.header {
             align-items: flex-end;
             flex: none;
             flex-direction: column-reverse;
+
+            .nav {
+                a {
+                    padding: 5px 21px 0 18px;
+                }
+            }
 
             .nav-login {
                 padding-right: 21px;

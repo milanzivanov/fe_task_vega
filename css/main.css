@@ -440,7 +440,7 @@ header.header {
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   header.header {
-    padding: 10px 0 15px 0; }
+    padding: 15px 0 15px 0; }
     header.header .header_left {
       padding-left: 10px; }
     header.header .header_right {
@@ -448,6 +448,8 @@ header.header {
       align-items: flex-end;
       flex: none;
       flex-direction: column-reverse; }
+      header.header .header_right .nav a {
+        padding: 5px 21px 0 18px; }
       header.header .header_right .nav-login {
         padding-right: 21px; }
         header.header .header_right .nav-login .nav-login_flag {
@@ -525,7 +527,7 @@ body, html {
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .slider-hero .slider-wrapper .slider-hero_box {
-    padding-left: 20px !important; }
+    padding-left: 50px !important; }
   .slider-hero #slider {
     position: relative;
     width: 100%;
@@ -533,11 +535,16 @@ body, html {
     .slider-hero #slider .slide img {
       width: 100%;
       height: 100%; }
-  .slider-hero .slider-hero_arrows {
-    align-self: flex-end;
-    padding: 10px; }
-  .slider-hero .wrapper.slider-wrapper .slider-hero_box h1 {
-    font-size: 25px; } }
+  .slider-hero .wrapper.slider-wrapper {
+    align-items: flex-start; }
+    .slider-hero .wrapper.slider-wrapper .slider-hero_arrows {
+      align-self: flex-end;
+      padding: 0 21px 20px 0px; }
+    .slider-hero .wrapper.slider-wrapper .slider-hero_box {
+      margin-top: 50px; }
+      .slider-hero .wrapper.slider-wrapper .slider-hero_box h1 {
+        font-size: 40px;
+        font-weight: 400; } }
 
 .usp-box {
   background-color: #fff;
@@ -559,6 +566,10 @@ body, html {
     padding-bottom: 47px; }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
+  .usp-box_top h3 {
+    color: #666666;
+    font-size: 24px;
+    font-weight: 400; }
   .usp-box_top h1 {
     text-align: center; } }
 
@@ -614,11 +625,19 @@ body, html {
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .usp-flex_wrapper {
     flex-direction: column; }
-    .usp-flex_wrapper .box .box-svg_left,
-    .usp-flex_wrapper .box .box-text_left,
-    .usp-flex_wrapper .box .box-svg_right,
-    .usp-flex_wrapper .box .box-text_right {
-      margin: 0; } }
+    .usp-flex_wrapper .box {
+      align-items: flex-start; }
+      .usp-flex_wrapper .box .box-svg_left,
+      .usp-flex_wrapper .box .box-text_left,
+      .usp-flex_wrapper .box .box-svg_right,
+      .usp-flex_wrapper .box .box-text_right {
+        margin: 0; }
+      .usp-flex_wrapper .box .box-text h4 {
+        font-size: 34px;
+        color: #021f59; }
+      .usp-flex_wrapper .box .box-text p {
+        font-size: 26px;
+        color: #021f59; } }
 
 .offers-box {
   display: flex;
@@ -684,6 +703,43 @@ body, html {
         .offers-box_gallery .box_gallery .box_gallery-text a span {
           padding-right: 10px; }
 
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .offers-box h4 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400; }
+  .offers-box_gallery {
+    flex-direction: column; }
+    .offers-box_gallery .box_gallery {
+      margin: 0 25px 20px 25px; }
+      .offers-box_gallery .box_gallery .box_gallery-img .box-ribbon h2.box-ribbon_text {
+        font-size: 36px;
+        font-weight: 400; }
+      .offers-box_gallery .box_gallery .box_gallery-text {
+        padding: 35px 0 0 15px; }
+        .offers-box_gallery .box_gallery .box_gallery-text h3,
+        .offers-box_gallery .box_gallery .box_gallery-text p {
+          font-size: 48px;
+          font-weight: 400;
+          color: #021f59; }
+        .offers-box_gallery .box_gallery .box_gallery-text p {
+          padding-bottom: 60px; }
+        .offers-box_gallery .box_gallery .box_gallery-text a > span {
+          font-size: 50px;
+          font-weight: 400;
+          padding-bottom: 40px; } }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .inspiration h3 {
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .inspiration h3 strong {
+      padding-top: 40px !important; } }
+
 .inspiration {
   background-color: #fff;
   padding: 50px 0 40px 0;
@@ -699,12 +755,6 @@ body, html {
       background-size: 43px 3px;
       background-repeat: repeat-x;
       padding: 0 0 3px 0; }
-
-@media only screen and (min-width: 120px) and (max-width: 767px) {
-  .offers-box_gallery {
-    flex-direction: column; }
-    .offers-box_gallery .box_gallery {
-      margin-right: 0; } }
 
 .classes-box {
   background-color: #021f59;
