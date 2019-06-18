@@ -326,10 +326,58 @@ footer.footer {
     .footer-bottom_content .footer-bottom_right h4 {
       padding-left: 17px; }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-top {
+    flex-direction: column;
+    background-color: #fff;
+    flex-flow: column wrap;
+    padding: 0; }
+    .footer-top .footer-top_left {
+      color: #fff;
+      background-color: #002f9d;
+      order: 0;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0; }
+      .footer-top .footer-top_left p {
+        color: #fff;
+        padding: 0; }
+      .footer-top .footer-top_left .input-box {
+        width: 100%;
+        flex-direction: column;
+        border-bottom: none; }
+        .footer-top .footer-top_left .input-box input[type="email"] {
+          border-bottom: 2px solid #fff;
+          width: 80%;
+          margin-bottom: 10px; }
+        .footer-top .footer-top_left .input-box a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #002f9d;
+          padding: 10px 90px;
+          background: #fff; }
+    .footer-top .footer-top_right {
+      align-items: center;
+      color: #222;
+      width: 100%;
+      background-color: #fff;
+      justify-content: center;
+      padding: 10px 0; }
+  .footer-bottom_content {
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0 10px 0; }
+    .footer-bottom_content ul {
+      padding: 0 0 0 0; }
+    .footer-bottom_content .footer-bottom_right {
+      padding: 0; } }
+
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .footer-top {
     flex-flow: column wrap;
-    padding: 0; }
+    padding: 37px 0 0 0; }
     .footer-top .footer-top_left {
       flex-direction: column;
       flex: 100%;
@@ -347,7 +395,11 @@ footer.footer {
           color: #002f9d;
           margin: 10px 0 0 0;
           font-weight: 700;
-          background-color: #fff; }
+          background-color: #fff;
+          display: flex;
+          width: 80%;
+          align-items: center;
+          justify-content: center; }
     .footer-top .footer-top_right {
       background: #fff;
       flex: 100%;
@@ -360,11 +412,14 @@ footer.footer {
       padding-right: 0; }
       .footer-top .footer-top_right h2 {
         padding: 15px 0 0 0; }
-      .footer-top .footer-top_right ul li a {
-        height: 70px;
-        width: 70px; }
+      .footer-top .footer-top_right ul {
+        padding: 10px 0; }
+        .footer-top .footer-top_right ul li a {
+          height: 80px;
+          width: 80px; }
   .footer-bottom_content {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding: 20px 0 20px 0; } }
 
 /* ----------------- header
 ----------------------------------------------------------------------- */
@@ -455,7 +510,10 @@ header.header {
         header.header .header_right .nav-login .nav-login_flag {
           margin: 0; }
           header.header .header_right .nav-login .nav-login_flag .nav-login_mobile {
-            display: none; } }
+            display: none; }
+        header.header .header_right .nav-login .border {
+          height: 20px;
+          background-color: #e5e7e9; } }
 
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
@@ -622,6 +680,10 @@ body, html {
     color: #222;
     font-size: 18px; }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .usp-flex_wrapper .box {
+    flex: 0 0 45%; } }
+
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .usp-flex_wrapper {
     flex-direction: column; }
@@ -703,6 +765,20 @@ body, html {
         .offers-box_gallery .box_gallery .box_gallery-text a span {
           padding-right: 10px; }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .offers-box_gallery .box_gallery {
+    flex: calc(50% - 60px); }
+    .offers-box_gallery .box_gallery .box_gallery-img {
+      height: 50vh;
+      width: 100%; }
+    .offers-box_gallery .box_gallery .box_gallery-text {
+      padding: 16px 0 0 10px;
+      font-size: 20px; }
+      .offers-box_gallery .box_gallery .box_gallery-text p {
+        padding-bottom: 30px; }
+      .offers-box_gallery .box_gallery .box_gallery-text a {
+        padding-bottom: 20px; } }
+
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .offers-box h4 {
     font-size: 60px;
@@ -712,9 +788,12 @@ body, html {
     flex-direction: column; }
     .offers-box_gallery .box_gallery {
       margin: 0 25px 20px 25px; }
-      .offers-box_gallery .box_gallery .box_gallery-img .box-ribbon h2.box-ribbon_text {
-        font-size: 36px;
-        font-weight: 400; }
+      .offers-box_gallery .box_gallery .box_gallery-img {
+        height: 100%;
+        height: 50vh; }
+        .offers-box_gallery .box_gallery .box_gallery-img .box-ribbon h2.box-ribbon_text {
+          font-size: 36px;
+          font-weight: 400; }
       .offers-box_gallery .box_gallery .box_gallery-text {
         padding: 35px 0 0 15px; }
         .offers-box_gallery .box_gallery .box_gallery-text h3,
@@ -724,7 +803,7 @@ body, html {
           color: #021f59; }
         .offers-box_gallery .box_gallery .box_gallery-text p {
           padding-bottom: 60px; }
-        .offers-box_gallery .box_gallery .box_gallery-text a > span {
+        .offers-box_gallery .box_gallery .box_gallery-text a {
           font-size: 50px;
           font-weight: 400;
           padding-bottom: 40px; } }
@@ -817,12 +896,14 @@ body, html {
         align-items: center;
         padding: 32px 0 40px 0; }
         .classes-box_services .service-content .service-tabs .service-tabs_tab h2 {
-          color: #002f9d;
+          color: #abb6bf;
           font-size: 33px; }
       .classes-box_services .service-content .service-tabs .service-tabs_tab.active {
         background-color: #fff;
         width: 100%;
         border-top: 5px solid #32aeef; }
+        .classes-box_services .service-content .service-tabs .service-tabs_tab.active h2 {
+          color: #31528c; }
     .classes-box_services .service-content .service-box {
       display: none;
       width: 100%; }
@@ -866,6 +947,12 @@ body, html {
         align-items: center; }
     .classes-box_services .service-content .active {
       display: flex; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .classes-box_top p {
+    padding: 0 30px 48px 30px; }
+  .classes-box_services a {
+    padding: 15px 20px; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .service-tabs {

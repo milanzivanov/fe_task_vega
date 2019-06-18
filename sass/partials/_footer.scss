@@ -134,12 +134,83 @@ footer.footer {
       }
     }
   }
+
+
+    // resposive tablet
+    @include breakpoint (tablet) {
+      .footer-top {
+        flex-direction: column;
+        background-color: #fff;
+        flex-flow: column wrap;
+        padding: 0;
+
+        .footer-top_left {
+          color: #fff;
+          background-color: #002f9d;
+          order: 0;
+          width: 100%;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px 0;
+
+          p {
+            color: #fff;
+            padding: 0;
+          }
+
+          .input-box {
+            width: 100%;
+            flex-direction: column;
+            border-bottom: none;
+
+            input[type="email"] {
+              border-bottom: 2px solid #fff;
+              width: 80%;
+              margin-bottom: 10px;
+            }    
+            
+            a {
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              color: #002f9d;
+              padding: 10px 90px;
+              background: #fff;
+            }
+          }
+
+        }
+
+        .footer-top_right {
+
+          align-items: center;
+          color: #222;
+          width: 100%;
+          background-color: #fff;
+          justify-content: center;
+          padding: 10px 0;
+        }
+      }
+
+      .footer-bottom_content {
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+        ul {
+          padding: 0 0 0 0;
+        }
+
+        .footer-bottom_right {
+          padding: 0;
+        }
+      }
+    }
   
   // resposive mobile
   @include breakpoint (mobile) {
     .footer-top {
       flex-flow: column wrap;
-      padding: 0;
+      padding: 37px 0 0 0;
   
       .footer-top_left {
         flex-direction: column;
@@ -163,6 +234,11 @@ footer.footer {
             margin: 10px 0 0 0;
             font-weight: 700;
             background-color: #fff;
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+
           }
         }
       }
@@ -183,10 +259,11 @@ footer.footer {
         }
   
         ul {
+          padding: 10px 0;
           li {
             a {
-              height: 70px;
-              width: 70px;
+              height: 80px;
+              width: 80px;
             }
           }
         }
@@ -197,6 +274,7 @@ footer.footer {
   
     .footer-bottom_content {
       flex-direction: column;
+      padding: 20px 0 20px 0;
     }
   }
 
