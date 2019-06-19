@@ -317,8 +317,8 @@ footer.footer {
     .footer-bottom_content ul a {
       display: block;
       padding: 10px 26px 10px 0; }
-      .footer-bottom_content ul a img {
-        max-width: 100%; }
+      .footer-bottom_content ul a .pay-icon {
+        fill: #abb6bf; }
   .footer-bottom_content .footer-bottom_right {
     display: flex;
     padding-right: 16px;
@@ -371,6 +371,10 @@ footer.footer {
     padding: 10px 0 10px 0; }
     .footer-bottom_content ul {
       padding: 0 0 0 0; }
+      .footer-bottom_content ul a .pay-icon {
+        fill: #abb6bf;
+        width: 80px;
+        height: 80px; }
     .footer-bottom_content .footer-bottom_right {
       padding: 0; } }
 
@@ -419,7 +423,11 @@ footer.footer {
           width: 80px; }
   .footer-bottom_content {
     flex-direction: column;
-    padding: 20px 0 20px 0; } }
+    padding: 20px 0 20px 0; }
+    .footer-bottom_content ul li a .pay-icon {
+      fill: #abb6bf;
+      width: 100px;
+      height: 100px; } }
 
 /* ----------------- header
 ----------------------------------------------------------------------- */
@@ -470,7 +478,7 @@ header.header {
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #222; }
+      color: #031326; }
     .header_right .nav-login li .border {
       margin: 0 15px 0 22px;
       width: 2px;
@@ -504,11 +512,16 @@ header.header {
       flex: none;
       flex-direction: column-reverse; }
       header.header .header_right .nav a {
-        padding: 5px 21px 0 18px; }
+        padding: 5px 21px 0 18px;
+        color: #002f9d;
+        font-size: 28px;
+        font-weight: bold; }
       header.header .header_right .nav-login {
         padding-right: 21px; }
         header.header .header_right .nav-login .nav-login_flag {
-          margin: 0; }
+          margin: 0;
+          font-size: 28px;
+          color: #031326; }
           header.header .header_right .nav-login .nav-login_flag .nav-login_mobile {
             display: none; }
         header.header .header_right .nav-login .border {
@@ -809,7 +822,9 @@ body, html {
         .offers-box_gallery .box_gallery .box_gallery-text a {
           font-size: 50px;
           font-weight: 400;
-          padding-bottom: 40px; } }
+          padding-bottom: 40px; }
+          .offers-box_gallery .box_gallery .box_gallery-text a span {
+            padding-right: 70px; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .inspiration h3 {

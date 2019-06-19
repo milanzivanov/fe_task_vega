@@ -66,7 +66,7 @@ header.header {
                 display: flex;
                 align-items: center;
                 text-decoration: none;
-                color: #222;
+                color: #031326;
             }
 
             .border {
@@ -125,6 +125,9 @@ header.header {
             .nav {
                 a {
                     padding: 5px 21px 0 18px;
+                    color: #002f9d;
+                    font-size: 28px;
+                    font-weight: bold;
                 }
             }
 
@@ -132,6 +135,8 @@ header.header {
                 padding-right: 21px;
                 .nav-login_flag {
                     margin: 0;
+                    font-size: 28px;
+                    color: #031326;
 
                     .nav-login_mobile {
                         display: none;

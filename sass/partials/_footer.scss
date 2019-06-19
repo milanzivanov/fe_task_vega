@@ -118,10 +118,11 @@ footer.footer {
       a {
         display: block;
         padding: 10px 26px 10px 0;
-  
-        img {
-          max-width: 100%;
+
+        .pay-icon {
+          fill: #abb6bf;
         }
+
       }
     }
   
@@ -198,6 +199,14 @@ footer.footer {
         padding: 10px 0 10px 0;
         ul {
           padding: 0 0 0 0;
+
+          a {     
+            .pay-icon {
+              fill: #abb6bf;
+              width: 80px;
+              height: 80px;
+            }
+          }
         }
 
         .footer-bottom_right {
@@ -275,6 +284,18 @@ footer.footer {
     .footer-bottom_content {
       flex-direction: column;
       padding: 20px 0 20px 0;
+
+      ul {
+        li {
+          a {     
+            .pay-icon {
+              fill: #abb6bf;
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
     }
   }
 
