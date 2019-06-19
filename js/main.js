@@ -1,8 +1,8 @@
 'use strict'
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-    setInterval(function(){
+    setInterval(function() {
 
         var currentSlide = currentSlide = $('.slide.active');
         var nextSlide = currentSlide.next();
@@ -27,7 +27,6 @@ $(document).ready(function(){
             $('.slide').first().fadeIn(300).addClass('active');
         }
     });
-    
     
     $('#left-arrow').on('click',function() {
         var currentSlide = currentSlide = $('.slide.active');

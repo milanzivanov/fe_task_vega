@@ -3,7 +3,7 @@
 
 //
 header.header {
-    background-color: #fff;
+    background-color: $bg-white;
     padding: 0 0 15px 0;
 }
 
@@ -47,7 +47,7 @@ header.header {
                     padding: 5px 21px 20px 18px;
                     text-decoration: none;
                     font-size: 23px;
-                    color: #32aeef;
+                    color: $blue2;
                 }
                 &:last-child {
                     padding-left: 6px;
@@ -75,7 +75,7 @@ header.header {
                 display: flex;
                 height: 12px;
                 align-items: center;
-                background: #a8a2a2;
+                background: $border-color;
             }
 
             .nav-login_flag {
@@ -104,8 +104,6 @@ header.header {
     }
 }
 
-
-  
 // resposive header mobile
 @include breakpoint (mobile) {
 
@@ -125,7 +123,7 @@ header.header {
             .nav {
                 a {
                     padding: 5px 21px 0 18px;
-                    color: #002f9d;
+                    color: $blue1;
                     font-size: 28px;
                     font-weight: bold;
                 }
@@ -137,15 +135,21 @@ header.header {
                     margin: 0;
                     font-size: 28px;
                     color: #031326;
+                    font-weight: 500;
 
                     .nav-login_mobile {
                         display: none;
+                    }
+
+                    span {
+                        color: #031326;
+                        font-size: 22px;
                     }
                 }
 
                 .border {
                     height: 20px;
-                    background-color: #e5e7e9;
+                    background-color: $border-color-mobile;
                 }
             }
 

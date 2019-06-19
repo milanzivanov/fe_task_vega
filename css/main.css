@@ -359,12 +359,16 @@ footer.footer {
           padding: 10px 90px;
           background: #fff; }
     .footer-top .footer-top_right {
+      flex-direction: column;
       align-items: center;
       color: #222;
       width: 100%;
       background-color: #fff;
       justify-content: center;
       padding: 10px 0; }
+      .footer-top .footer-top_right h2 {
+        color: #002f9d;
+        padding: 0 0 10px 0; }
   .footer-bottom_content {
     justify-content: center;
     flex-direction: column;
@@ -373,7 +377,7 @@ footer.footer {
       padding: 0 0 0 0; }
       .footer-bottom_content ul a .pay-icon {
         fill: #abb6bf;
-        width: 80px;
+        width: 58px;
         height: 80px; }
     .footer-bottom_content .footer-bottom_right {
       padding: 0; } }
@@ -415,6 +419,7 @@ footer.footer {
       flex-direction: column;
       padding-right: 0; }
       .footer-top .footer-top_right h2 {
+        color: #002f9d;
         padding: 15px 0 0 0; }
       .footer-top .footer-top_right ul {
         padding: 10px 0; }
@@ -426,7 +431,7 @@ footer.footer {
     padding: 20px 0 20px 0; }
     .footer-bottom_content ul li a .pay-icon {
       fill: #abb6bf;
-      width: 100px;
+      width: 77px;
       height: 100px; } }
 
 /* ----------------- header
@@ -521,9 +526,13 @@ header.header {
         header.header .header_right .nav-login .nav-login_flag {
           margin: 0;
           font-size: 28px;
-          color: #031326; }
+          color: #031326;
+          font-weight: 500; }
           header.header .header_right .nav-login .nav-login_flag .nav-login_mobile {
             display: none; }
+          header.header .header_right .nav-login .nav-login_flag span {
+            color: #031326;
+            font-size: 22px; }
         header.header .header_right .nav-login .border {
           height: 20px;
           background-color: #e5e7e9; } }
@@ -709,10 +718,10 @@ body, html {
         margin: 0; }
       .usp-flex_wrapper .box .box-text h4 {
         font-size: 34px;
-        color: #021f59; }
+        color: #002f9d; }
       .usp-flex_wrapper .box .box-text p {
         font-size: 26px;
-        color: #021f59; } }
+        color: #002f9d; } }
 
 .offers-box {
   display: flex;
@@ -885,7 +894,7 @@ body, html {
   .classes-box_services a {
     display: block;
     align-self: flex-end;
-    color: #32aeef;
+    color: #38bdff;
     padding: 15px 0; }
     .classes-box_services a strong {
       font-weight: 600;

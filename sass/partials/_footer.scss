@@ -3,11 +3,11 @@
 
 // footer
 footer.footer {
-    border-bottom: 10px solid #32aeef;
+    border-bottom: 10px solid $blue2;
   }
   
   .footer_flex {
-    background-color: #002f9d;
+    background-color: $blue1;
   }
   
   .footer-top {
@@ -23,7 +23,7 @@ footer.footer {
       padding-left: 48px;
   
       p {
-          color: #fff;
+          color: $bg-white;
           font-size: 24px;
           padding: 0px 105px 0 21px;
       }
@@ -33,7 +33,7 @@ footer.footer {
     .footer-top_right {
       display: flex;
       align-items: center;
-      color: #fff;
+      color: $bg-white;
       padding-right: 60px;
 
       h2 {
@@ -75,18 +75,18 @@ footer.footer {
   }
   
   .input-box {
-    background: #002f9d;
+    background: $blue1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $bg-white;
     width: 40%;
   
     input[type="email"] {
       padding: 10px 10px 12px 0;
       border: none;
       outline: none;
-      background-color: #002f9d;
+      background-color: $blue1;
       font-size: 18px;
     }
   
@@ -94,7 +94,7 @@ footer.footer {
       text-decoration: none;
       display: flex;
       align-items: center;
-      color: #fff;
+      color: $bg-white;
   
       span {
         padding-right: 10px;
@@ -136,84 +136,88 @@ footer.footer {
     }
   }
 
+  // resposive tablet
+  @include breakpoint (tablet) {
+    .footer-top {
+      flex-direction: column;
+      background-color: $bg-white;
+      flex-flow: column wrap;
+      padding: 0;
 
-    // resposive tablet
-    @include breakpoint (tablet) {
-      .footer-top {
-        flex-direction: column;
-        background-color: #fff;
-        flex-flow: column wrap;
-        padding: 0;
-
-        .footer-top_left {
-          color: #fff;
-          background-color: #002f9d;
-          order: 0;
-          width: 100%;
-          justify-content: center;
-          flex-direction: column;
-          padding: 10px 0;
-
-          p {
-            color: #fff;
-            padding: 0;
-          }
-
-          .input-box {
-            width: 100%;
-            flex-direction: column;
-            border-bottom: none;
-
-            input[type="email"] {
-              border-bottom: 2px solid #fff;
-              width: 80%;
-              margin-bottom: 10px;
-            }    
-            
-            a {
-              text-decoration: none;
-              display: flex;
-              align-items: center;
-              color: #002f9d;
-              padding: 10px 90px;
-              background: #fff;
-            }
-          }
-
-        }
-
-        .footer-top_right {
-
-          align-items: center;
-          color: #222;
-          width: 100%;
-          background-color: #fff;
-          justify-content: center;
-          padding: 10px 0;
-        }
-      }
-
-      .footer-bottom_content {
+      .footer-top_left {
+        color: $bg-white;
+        background-color: $blue1;
+        order: 0;
+        width: 100%;
         justify-content: center;
         flex-direction: column;
-        padding: 10px 0 10px 0;
-        ul {
-          padding: 0 0 0 0;
+        padding: 10px 0;
 
-          a {     
-            .pay-icon {
-              fill: #abb6bf;
-              width: 80px;
-              height: 80px;
-            }
+        p {
+          color: $bg-white;
+          padding: 0;
+        }
+
+        .input-box {
+          width: 100%;
+          flex-direction: column;
+          border-bottom: none;
+
+          input[type="email"] {
+            border-bottom: 2px solid $bg-white;
+            width: 80%;
+            margin-bottom: 10px;
+          }    
+          
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: $blue1;
+            padding: 10px 90px;
+            background: $bg-white;
           }
         }
 
-        .footer-bottom_right {
-          padding: 0;
+      }
+
+      .footer-top_right {
+        flex-direction: column;
+        align-items: center;
+        color: #222;
+        width: 100%;
+        background-color: $bg-white;
+        justify-content: center;
+        padding: 10px 0;
+
+        h2 {
+          color: $blue1;
+          padding: 0 0 10px 0;
         }
       }
     }
+
+    .footer-bottom_content {
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0 10px 0;
+      ul {
+        padding: 0 0 0 0;
+
+        a {     
+          .pay-icon {
+            fill: #abb6bf;
+            width: 58px;
+            height: 80px;
+          }
+        }
+      }
+
+      .footer-bottom_right {
+        padding: 0;
+      }
+    }
+  }
   
   // resposive mobile
   @include breakpoint (mobile) {
@@ -234,15 +238,15 @@ footer.footer {
   
           input[type="email"] {
             width: 80%;
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid $bg-white;
           }
   
           a {
             padding: 10px 50px;
-            color: #002f9d;
+            color: $blue1;
             margin: 10px 0 0 0;
             font-weight: 700;
-            background-color: #fff;
+            background-color: $bg-white;
             display: flex;
             width: 80%;
             align-items: center;
@@ -253,9 +257,9 @@ footer.footer {
       }
   
       .footer-top_right {
-        background: #fff;
+        background: $bg-white;
         flex: 100%;
-        color: #002f9d; 
+        color: $blue1;
         width: 100%;
         display: flex;
         align-items: center;
@@ -264,6 +268,7 @@ footer.footer {
         padding-right: 0;
         
         h2 {
+          color: $blue1;
           padding: 15px 0 0 0;
         }
   
@@ -290,7 +295,7 @@ footer.footer {
           a {     
             .pay-icon {
               fill: #abb6bf;
-              width: 100px;
+              width: 77px;
               height: 100px;
             }
           }
