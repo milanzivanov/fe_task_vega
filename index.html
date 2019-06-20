@@ -86,10 +86,14 @@
         <!-- slider arrows -->
         <div class="slider-hero_arrows">
           <div id="left-arrow">
-            <img class="vega-arrowslider vega-arrowslider_rotate" alt="slider arrow left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQAQMAAADH4XZbAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAMAAAAQAABicmvQwAAAABJRU5ErkJggg==">
+            <svg class="icon icon-sliderArrow">
+              <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-arrowSlider"></use>
+            </svg>
           </div>
           <div id="right-arrow">
-            <img class="vega-arrowslider" alt="slider arrow right" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQAQMAAADH4XZbAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAMAAAAQAABicmvQwAAAABJRU5ErkJggg==">
+            <svg class="icon icon-sliderArrow">
+              <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-arrowSlider"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -111,7 +115,7 @@
             <div class="box-svg box-svg_left">
 
               <svg class="icon icon-seat">
-                <use xlink:href="./img/svg_sprite.svg#seat"></use>
+                <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-seat"></use>
               </svg>
 
               <img class="bg-ellipse vega-ellipse-bg" alt="bg ellipse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABiAQMAAAB6XC9OAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQG0AAAVcAAG/T2QxAAAAAElFTkSuQmCC">
@@ -127,7 +131,7 @@
             <div class="box-svg box-svg_right">
 
               <svg class="icon icon-shoe">
-                <use xlink:href="./img/svg_sprite.svg#shoe"></use>
+                <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-shoe"></use>
               </svg>
 
               <img class="bg-ellipse vega-ellipse-bg" alt="bg ellipse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABiAQMAAAB6XC9OAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQG0AAAVcAAG/T2QxAAAAAElFTkSuQmCC">
@@ -143,7 +147,7 @@
             <div class="box-svg box-svg_left">
 
               <svg class="icon icon-cabin">
-                <use xlink:href="./img/svg_sprite.svg#cabin"></use>
+                  <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-cabin"></use>
               </svg>
 
               <img class="bg-ellipse vega-ellipse-bg" alt="bg ellipse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABiAQMAAAB6XC9OAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQG0AAAVcAAG/T2QxAAAAAElFTkSuQmCC">
@@ -159,7 +163,7 @@
             <div class="box-svg box-svg_right">
 
               <svg class="icon icon-smile">
-                <use xlink:href="./img/svg_sprite.svg#smile"></use>
+                  <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-smile"></use>
               </svg>
 
               <img class="bg-ellipse vega-ellipse-bg" alt="bg ellipse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABiAQMAAAB6XC9OAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABRJREFUeNpjYBgFo2AUjIJRQG0AAAVcAAG/T2QxAAAAAElFTkSuQmCC">
@@ -198,9 +202,9 @@
               <a href="#">
                 <span>Book now</span>
                 <picture>
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
-                    <img srcset="./img/arrowRight.png" alt="arrow right blue">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
+                  <img srcset="./img/arrowRight.png" alt="arrow right blue">
                 </picture>              
               </a>
             </div>
@@ -216,9 +220,9 @@
               <a href="#">
                 <span>Book now</span>
                 <picture>
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
-                    <img srcset="./img/arrowRight.png" alt="arrow right blue">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
+                  <img srcset="./img/arrowRight.png" alt="arrow right blue">
                 </picture>
               </a>
             </div>
@@ -234,9 +238,9 @@
               <a href="#">
                 <span>Book now</span>
                 <picture>
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
-                    <img srcset="./img/arrowRight.png" alt="arrow right blue">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
+                  <img srcset="./img/arrowRight.png" alt="arrow right blue">
                 </picture>             
                </a>
             </div>
@@ -253,9 +257,9 @@
                 <span>Book now</span>
 
                 <picture>
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
-                    <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
-                    <img srcset="./img/arrowRight.png" alt="arrow right blue">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAjCAYAAAB2KjFhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGzSURBVHjapNa/S9VxGMXxlzcLKSgI5IaD3OASYkNSS0Pgj0sZEmRDDQ0SLW39O9GQRIODQylEJJQVCAUhOIQICYmDEJFgUFAStTwXPjT1fb53udub7+Gc55xPjzMP4AQ+448avwbaeI976KkLa+E47mAWB+rAXuAKvuMWHmWBjfh/hcv4hpuYw8EsDFYwiT3cwDwOZWHwDh3sYhpP0JeFwWoAv2AKCzichcEaxiJ7k3iKI1kYrAdwB+N4jqNZGGxgFNu4gCUcy8JgM4CfcB4vI+QpGGyF5E2cC2B/Fiakjob0EbxGMwsTZozhA4YDOJCFibhMRHyG8AaDWZgIdCcC3sZbnGrUqK9dXMd+SJ2tA+vH42iXbcz0JkFNLIcJGyF5J/NlA+HicLjaPbnKBgyGe0Ph5kS4C6rIPBnSWuHipTChcmjbIa0VMej8C/pfWBnMldiKvcyhny5OphydyhU0EoBm9Fh3DiuXY1kzz3AVPzK1XRbgAq7hZ2ZQymqej/38lZm6cjTmYtn3MyNcztlDzOB35nlwsRja+7idAXXP6WOU3SLu1nnw9cbynMXXui/HvwMA/t1lwGwYPOMAAAAASUVORK5CYII=" media="(max-width: 768px)">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADVSURBVHjajNK9S4JRFAfgpxcraBGEcHNqCBsKXKUPhFqMoCahf62xraDEpSAiag1ajAYnB0GCoCFBQ2g5gbxcowN3ug+/cz/Ogs0zWMI0VrKyQBc4R2EeLGAN2yhiES1MUomvaOADx7jEcgrCc+B3NHGNlRSEF+xhiAO0Z3GW69DFLgbR4QalFIQ37KCPOm5RzPyzUnAdD6jgCfv4zD/wBu5Qxj0O8ZVP3IrNclyi+YtmYS2SVtHBEUb5M1YDlXCFE4xTf93DYySc4nveUEwi5c8x+xkAyIUrU/kGl5kAAAAASUVORK5CYII=">
+                  <img srcset="./img/arrowRight.png" alt="arrow right blue">
                 </picture>
               </a>
             </div>
@@ -324,19 +328,25 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>Reclinable seats</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>                   
                       <span>1 Hand luggage</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>Extra leg room</span>
                     </a>
                   </li>
@@ -344,31 +354,34 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                            <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                        </picture>
+                        <svg class="icon icon-extra icon-extra_d">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                        </svg>
+                        <svg class="icon icon-extra icon-extra_m">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                        </svg>
                         <p>Extra cabin luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                        <svg class="icon icon-extra icon-extra_d">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                        </svg>
+                        <svg class="icon icon-extra icon-extra_m">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                        </svg>
                       <p>Extra hold luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                            <img srcset="./img/x.png" alt="My default image">
-                          </picture>
+                        <svg class="icon icon-extra icon-extra_d">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                        </svg>
+                        <svg class="icon icon-extra icon-extra_m">
+                          <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                        </svg>
                       <p>Luggage access</p>
                     </a>
                   </li>
@@ -391,19 +404,25 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>                      
                       <span>Reclinable seats</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>                      
                       <span>1 Hand luggage</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>Extra leg room</span>
                     </a>
                   </li>
@@ -411,31 +430,34 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                      <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Extra cabin luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                        <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Extra hold luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                      <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Luggage access</p>
                     </a>
                   </li>
@@ -458,19 +480,25 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>Reclinable seats</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>1 Hand luggage</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img class="vega-checked" alt="checked icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAWAQMAAAALhHXIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYKAnAAAAbgABdqCpzwAAAABJRU5ErkJggg==">
+                      <svg class="icon icon-checked">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-chacked"></use>
+                      </svg>
                       <span>Extra leg room</span>
                     </a>
                   </li>
@@ -478,31 +506,34 @@
                 <ul class="service-box_flex">
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                      <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Extra cabin luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                      <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Extra hold luggage</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <picture>
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAzCAYAAABi3qMzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJlSURBVHjazJjpjpswFIU/22TvpJmp2vd/vbZqprNkIRDon4NkUWzMYFW9UgRC1zm++7EN6bIEDkAB3IEX4Jqy0CUCOOCrp2+BjUCascU2EWQNmIHvm5TFlnli/gUIuUAKBT0UK/tRcw2wBXYCGZMr8A7cUkH8VJ0qF6V2EwPZAI8zQ1ADRz3/qpM18JQpzmu5sPUD7zJY0E+Ip74lj8AisugOnIGTnqX8XkSSx8mSm5Hit4BiC7zqz0OJs1cWDkkDfHdSWAWUjsqYmJQCWwY2UdkIQOeWFHkFqpC1NhKL88RgvwbcVdpI4OqJICXwrCRB1f8LaIrMvfAyFEPrIfdllbMLhwK2zzUKXGTCde3hljJix0Duaus2ANS1+ybi2iRL7iPzeqGNbPVuBNpOndF74NPETd7Ubc8xl7penk/NKif9nd6rIevcwM4qLTQTwLretZXr6zFyV8v81vP/FLCNEqYcY5CtrDppZ0a6qYBLHyiFplZqFSevZkzC2qW8UpsZNVYo4NuIhXfgh5sB0sgdV+3aBYq5dhlaUyN3bgJdw+QAYaRrGDtQNx+NU2hUu8Kr8oNHY96Bt5zzxIqIOa+gHlIPOL1sG4yZjbSQh4mu24a4go10zwL4nAiwihC8qxNIaGgt9Csjs2OneIasfjGeqYfITlvVQqVU7fjaeqS9XIBnH/1LToYiD/0E7v2htc54WD12TMj1XHLNANQCv/3bCjegcNb3xYyjXJl62F+KWKwTZ84pRNJNYlc4BMDOakH13MuCGKmrUtj/f3PtQSpTnAtyCQBnvVRr5P+O6tQ6VSWdxv4MANCTlYVrYEtjAAAAAElFTkSuQmCC" media="(max-width: 768px)">
-                          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAIcSURBVHjapJZtb9swDIQf2Y6XNN7QbgsG7P//vK5ot9hJ7drelxPACozfQoBAYlmieDweHfhsBfAFKPU7B4I82iD/ADqgBd5ZaPGgPfAV2LHNBqAGzsA4F7ACvjkHdMpiNJ5pTy4EimTfO/BnKmChzGKQM3BVoCWWqQSV0InlaKc2BJNtnjxbEjDusc8mM7TwHuUoyzlIw9pi24C9DrJrxcJzPpa+a186AxfVYCfPzCWCskzbIrbEr7UBI3Gu8jWWs6Lo0Q4b+zA3dV+VYQmcBFVrSDMkzRxhjrCXW0mzhSzcw9KzmLo3hJmyMdHSg/53a9qilkfoMiPgmH7s5amsrcowdxg7LJS5g7zUJWP2F6CxHMiNlpaCMzMBl7D8h7S0cGRyDzwI9iEu/J4ZO4OBMs7GZ62fHGQaZRuSej8DnSVG68CX6eY7o0AXXeLRCdYBb049A/AEBFvDiwgTe6y4MT1qA7+1K/Cq56+CuUr4cvD6zWNganvnWa1B/iCkGo9cmWFQpZezBWQpb0jcVZctnK8IgF3QQuWMm86Rtih7J0d3R0F51dqjp1ixNkcFnVP9Rof+nNDQEfgn4pxS1ueGXbVe6s1lgkPvRjcvnRoORhZrB7k2Tbl1PoBCIm2RkZWjWi/6kGpvjKzL0sE5JiOqN63zifbAX9Xv6PDiLWe7xQmRObPSU5oXoA/cZxnwfWYI9wrWseUz795p8X8AzimcKzvNmJcAAAAASUVORK5CYII=">
-                          <img srcset="./img/x.png" alt="My default image">
-                      </picture>
+                      <svg class="icon icon-extra icon-extra_d">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something"></use>
+                      </svg>
+                      <svg class="icon icon-extra icon-extra_m">
+                        <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-something2"></use>
+                      </svg>
                       <p>Luggage access</p>
                     </a>
                   </li>
@@ -513,7 +544,6 @@
           </div>
 
         </div>
-        
         
       </div>
     </section>
@@ -583,28 +613,30 @@
               <li>
                 <a href="#">
                   <svg class="icon pay-icon">
-                    <use xlink:href="./img/svg_sprite.svg#mc"></use>
+                      <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-mc"></use>
                   </svg>
                 </a> 
               </li>
               <li>
                 <a href="#">
                   <svg class="icon pay-icon">
-                    <use xlink:href="./img/svg_sprite.svg#visa"></use>
+                      <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-visa"></use>
                   </svg>
                 </a> 
               </li>
               <li>
                 <a href="#">
                   <svg class="icon pay-icon">
-                    <use xlink:href="./img/svg_sprite.svg#amex"></use>
+                    <svg class="icon pay-icon">
+                      <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-amex"></use>
+                    </svg>
                   </svg>
                 </a> 
               </li>
               <li>
                 <a href="#">
                   <svg class="icon pay-icon">
-                    <use xlink:href="./img/svg_sprite.svg#paypal"></use>
+                    <use xlink:href="./img/svg_icons/svg-sprites.svg#icon-paypal"></use>
                   </svg>
                 </a> 
               </li>
@@ -618,7 +650,7 @@
           </div>
         </div>
       </div>
-
+      
     </footer>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">

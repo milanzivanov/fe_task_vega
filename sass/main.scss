@@ -101,24 +101,20 @@ body, html {
       
       #left-arrow,
       #right-arrow {
-        padding: 15px;
         cursor: pointer;
         border-radius: 50%;
         border: 1px solid $bg-white;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 55px;
       }
 
       #left-arrow {
-        .vega-arrowslider_rotate {
-          transform: rotate(180deg);
-        }
-        
+        transform: rotate(270deg);     
       }
       #right-arrow {
         margin-left: 10px;
+        transform: rotate(-270deg);
       }
     }
   }
