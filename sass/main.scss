@@ -316,18 +316,18 @@ body, html {
   }
 
 }
-
+////////////////////
 // offers start
 .offers-box {
   display: flex;
   flex-direction: column;
   background-color: $blue1;
-  padding: 38px 0 0 0;
+  padding: 55px 0 40px 0;
 
   h4 {
     color: $bg-white;
     font-size: 20px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
   }
 }
 
@@ -382,17 +382,17 @@ body, html {
 
 
     .box_gallery-text {
-      padding: 15px 0 0 50px;
+      padding: 33px 0 0 50px;
       font-size: 20px;
 
       h3 {
         color: $blue4;
-        padding-bottom: 10px;
+        padding-bottom: 7px;
       }
 
       p {
         color: $blue4;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
 
       a {
@@ -410,7 +410,7 @@ body, html {
     }
   }
 }
-
+//////////////////////////////////
 // offers box responsive tablet
 @include breakpoint (tablet) {
 
@@ -442,7 +442,7 @@ body, html {
     }
   }
 }
-
+/////////////////////////////////
 // offers box responsive mobile
 @include breakpoint (mobile) {
   .offers-box {
