@@ -119,7 +119,7 @@ body, html {
     }
   }
 }
-
+/////////////////////////
 // resposive mobile
 @include breakpoint (mobile) {
   .slider-hero {
@@ -188,7 +188,7 @@ body, html {
     padding-bottom: 47px;
   }
 }
-
+////////////////////////
 // resposive mobile
 @include breakpoint (mobile) {
 
@@ -277,7 +277,7 @@ body, html {
     }
   }
 }
-
+////////////////////////
 // resposive tablet
 @include breakpoint (tablet) {
   .usp-flex_wrapper {
@@ -286,7 +286,7 @@ body, html {
     }
   }
 }
-
+/////////////////////
 // resposive mobile
 @include breakpoint (mobile) {
 
@@ -353,7 +353,7 @@ body, html {
         width: 100%;
         height: auto;
       }
-
+      //////////////////////
       // ribbon box
       .box-ribbon {
         position: absolute;
@@ -519,7 +519,6 @@ body, html {
   padding: 50px 0 40px 0;
   display: flex;
   color: $blue1;
-  background-color: aqua;
   h3 {
     font-size: 32px;
     font-weight: 400;
