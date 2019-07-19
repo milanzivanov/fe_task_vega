@@ -495,7 +495,7 @@ body, html {
   }
   
 }
-
+////////////////////////
 // resposive mobile
 @include breakpoint (mobile) {
   .inspiration {
@@ -512,14 +512,14 @@ body, html {
     }
   }
 }
-
-//
+////////////////////
+// inspiration
 .inspiration {
   background-color: $bg-white;
   padding: 50px 0 40px 0;
   display: flex;
   color: $blue1;
-  
+  background-color: aqua;
   h3 {
     font-size: 32px;
     font-weight: 400;
@@ -534,8 +534,8 @@ body, html {
   }
 }
 
-
-//
+//////////////////
+// classess box
 .classes-box {
   background-color: $blue4;
   padding: 78px 0 0 0;
@@ -552,7 +552,7 @@ body, html {
   h3 {
     font-size: 16px;
     color: #e4e6ea;
-    padding: 0 0 15px 0;
+    padding: 0;
   }
 
   h1 {
@@ -564,7 +564,8 @@ body, html {
   p {
     font-size: 20px;
     color: $bg-white;
-    padding: 0 0 48px 0;
+    padding: 0 0 7px 0;
+    width: 80%;
   }
 }
 
@@ -572,13 +573,13 @@ body, html {
   color: $bg-white;
   display: flex;
   flex-flow: column wrap;
-  padding-bottom: 35px;
+  padding: 35px 0 90px 0;
 
-  a {
+  a.classes-box_services-p {
     display: block;
     align-self: flex-end;
     color: $blue5;
-    padding: 15px 0;
+    padding: 13px 0 30px 0;
 
     //
     strong {
@@ -597,9 +598,9 @@ body, html {
     justify-content: center;
     align-items: stretch;
     background: $bg-white;
-    padding: 0 0 87px 0;
+    padding: 0 0 42px 0;
 
-
+    ////////////////////
     // tabs
     .service-tabs {
       display: flex;
@@ -613,7 +614,7 @@ body, html {
         justify-content: center;
         cursor: pointer;
         align-items: center;
-        padding: 32px 0 40px 0;
+        padding: 15px 0 15px 0;
 
         h2 {
           color: rgb(171, 182, 191);
@@ -662,7 +663,8 @@ body, html {
 
         ul.service-box_img {
           align-items: center;
-          a {
+          a.service-box_img-p {
+            padding: 47px 0 0 25px;
             .circle-img {
               border-radius: 50%;
               height: 200px;
@@ -697,6 +699,8 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        padding: 25px 0 0 40px;
       }
 
     }
@@ -707,7 +711,7 @@ body, html {
 
   }
 }
-
+//////////////////////////
 // resposive tablet
 @include breakpoint (tablet) {
 
@@ -716,13 +720,13 @@ body, html {
 }
 
   .classes-box_services {
-    a {
+    a.classes-box_services-p {
       padding: 15px 20px;
     }
   }
 
 }
-
+///////////////////////////
 // resposive mobile
 @include breakpoint (mobile) {
   
@@ -732,7 +736,7 @@ body, html {
 
   .classes-box_services {
 
-     a {
+    a.classes-box_services-p {
       align-self: center;
     }
 

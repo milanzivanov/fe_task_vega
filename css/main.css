@@ -886,7 +886,8 @@ body, html {
   background-color: #fff;
   padding: 50px 0 40px 0;
   display: flex;
-  color: #002f9d; }
+  color: #002f9d;
+  background-color: aqua; }
   .inspiration h3 {
     font-size: 32px;
     font-weight: 400; }
@@ -912,7 +913,7 @@ body, html {
   .classes-box_top h3 {
     font-size: 16px;
     color: #e4e6ea;
-    padding: 0 0 15px 0; }
+    padding: 0; }
   .classes-box_top h1 {
     font-size: 50px;
     color: #38bdff;
@@ -920,19 +921,20 @@ body, html {
   .classes-box_top p {
     font-size: 20px;
     color: #fff;
-    padding: 0 0 48px 0; }
+    padding: 0 0 7px 0;
+    width: 80%; }
 
 .classes-box_services {
   color: #fff;
   display: flex;
   flex-flow: column wrap;
-  padding-bottom: 35px; }
-  .classes-box_services a {
+  padding: 35px 0 90px 0; }
+  .classes-box_services a.classes-box_services-p {
     display: block;
     align-self: flex-end;
     color: #38bdff;
-    padding: 15px 0; }
-    .classes-box_services a strong {
+    padding: 13px 0 30px 0; }
+    .classes-box_services a.classes-box_services-p strong {
       font-weight: 600;
       background-image: linear-gradient(to right, #021f59 50%, #38bdff 0%);
       background-position: bottom;
@@ -945,7 +947,7 @@ body, html {
     justify-content: center;
     align-items: stretch;
     background: #fff;
-    padding: 0 0 87px 0; }
+    padding: 0 0 42px 0; }
     .classes-box_services .service-content .service-tabs {
       display: flex;
       flex-flow: row wrap;
@@ -957,7 +959,7 @@ body, html {
         justify-content: center;
         cursor: pointer;
         align-items: center;
-        padding: 32px 0 40px 0; }
+        padding: 15px 0 15px 0; }
         .classes-box_services .service-content .service-tabs .service-tabs_tab h2 {
           color: #abb6bf;
           font-size: 33px; }
@@ -990,13 +992,15 @@ body, html {
             width: 200px; }
         .classes-box_services .service-content .service-box .service-box_content ul.service-box_img {
           align-items: center; }
-          .classes-box_services .service-content .service-box .service-box_content ul.service-box_img a .circle-img {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px; }
-          .classes-box_services .service-content .service-box .service-box_content ul.service-box_img a img {
-            height: auto;
-            width: auto; }
+          .classes-box_services .service-content .service-box .service-box_content ul.service-box_img a.service-box_img-p {
+            padding: 47px 0 0 25px; }
+            .classes-box_services .service-content .service-box .service-box_content ul.service-box_img a.service-box_img-p .circle-img {
+              border-radius: 50%;
+              height: 200px;
+              width: 200px; }
+            .classes-box_services .service-content .service-box .service-box_content ul.service-box_img a.service-box_img-p img {
+              height: auto;
+              width: auto; }
       .classes-box_services .service-content .service-box li a span,
       .classes-box_services .service-content .service-box li a p {
         font-size: 16px;
@@ -1007,20 +1011,21 @@ body, html {
       .classes-box_services .service-content .service-box a {
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        padding: 25px 0 0 40px; }
     .classes-box_services .service-content .active {
       display: flex; }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .classes-box_top p {
     padding: 0 30px 48px 30px; }
-  .classes-box_services a {
+  .classes-box_services a.classes-box_services-p {
     padding: 15px 20px; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .service-tabs {
     display: none !important; }
-  .classes-box_services a {
+  .classes-box_services a.classes-box_services-p {
     align-self: center; }
   .classes-box_services .service-content {
     flex-direction: column; }
